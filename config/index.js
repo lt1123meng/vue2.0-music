@@ -23,8 +23,8 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
-    autoOpenBrowser: true,
+    port: parseInt(8+''+parseInt(Math.random()*10)+parseInt(Math.random()*10)+parseInt(Math.random()*10)),
+    autoOpenBrowser: false,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {},

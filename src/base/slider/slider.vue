@@ -91,7 +91,7 @@
           momentum: false,
           snap: true,
           snapLoop: this.loop,
-          snapThreshold: 0.3,
+          snapThreshold: 0.4,
           snapSpeed: 400
         })
 
@@ -100,6 +100,7 @@
           if (this.loop) {
             pageIndex -= 1
           }
+          console.log(this.slider.getCurrentPage().pageX)
           this.currentPageIndex = pageIndex
 
           if (this.autoPlay) {
@@ -108,6 +109,7 @@
         })
 
         this.slider.on('beforeScrollStart', () => {
+          debugger
           if (this.autoPlay) {
             clearTimeout(this.timer)
           }
@@ -122,6 +124,7 @@
           pageIndex += 1
         }
         this.timer = setTimeout(() => {
+          console.log(pageIndex)
           this.slider.goToPage(pageIndex, 0, 400)
         }, this.interval)
       }
@@ -133,6 +136,7 @@
   @import "~common/stylus/variable"
 
   .slider
+    position: relative
     min-height: 1px
     .slider-group
       position: relative
@@ -164,7 +168,7 @@
         width: 8px
         height: 8px
         border-radius: 50%
-        background: $color-text-l
+        background: $color-text-lll
         &.active
           width: 20px
           border-radius: 5px
