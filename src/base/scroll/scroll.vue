@@ -45,6 +45,7 @@
     },
     methods: {
       _initScroll() {
+        console.log(this.$refs.wrapper)
         if (!this.$refs.wrapper) {
           return
         }
@@ -94,7 +95,7 @@
       data() {
         setTimeout(() => {
           this.refresh()
-        }, this.refreshDelay)
+        }, 1000)
       }
     }
   }

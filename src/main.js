@@ -4,11 +4,14 @@ import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import VueLazyload from 'vue-lazyload'
 import FastClick from 'fastclick'
 import 'common/stylus/index.styl'
 
 Vue.config.productionTip = false
+Vue.use(VueLazyload, {
+  loading: require('common/image/default.png')
+})
 /* eslint-disable no-unused-vars */
 FastClick.attach(document.body)
 /* eslint-disable no-new */

@@ -1,7 +1,7 @@
 <template>
   <div class="recommend" ref="recommend">
     <scroll ref="scroll" class="recommend-content" :data="discList">
-      <div class="recommend-content">
+      <div>
         <div v-if="recommends.length" class="slider-wrapper" ref="sliderWrapper">
           <slider>
             <div v-for="item in recommends">
@@ -16,7 +16,7 @@
           <ul>
             <li @click="selectItem(item)" v-for="item in discList" class="item">
               <div class="icon">
-                <img width="60" height="60" :src="item.imgurl">
+                <img width="60" height="60" v-lazy="item.imgurl">
               </div>
               <div class="text">
                 <h2 class="name" v-html="item.creator.name"></h2>
@@ -39,7 +39,7 @@
   import Loading from 'base/loading/loading'
   import Scroll from 'base/scroll/scroll'
   import {getRecommend, getDiscList} from 'api/recommend'
-//  import {playlistMixin} from 'common/js/mixin'
+  //  import {playlistMixin} from 'common/js/mixin'
   import {ERR_OK} from 'api/config'
   //    import {mapMutations} from 'vuex'
 
