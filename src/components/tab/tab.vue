@@ -25,6 +25,7 @@
 <style scoped lang="stylus" rel="stylesheet/stylus">
   @import "~common/stylus/variable"
   .tab
+    position: relative
     display: flex
     height: 44px
     line-height: 44px
