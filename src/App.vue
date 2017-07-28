@@ -1,3 +1,8 @@
+<!--
+注入MHeader,tab组件
+路由显示位置
+keep-alive  vue内置组件 避免重复渲染
+-->
 <template>
   <div id="app">
     <m-header></m-header>

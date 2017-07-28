@@ -87,8 +87,9 @@
         })
         return hot.concat(ret)
       },
+//      在组件中映射mutation
       ...mapMutations({
-        setSinger: 'SET_SINGER'
+        setSinger: 'SET_SINGER'  //this.setSinger=this.$store.commit('SET_SINGER')
       })
     },
     components: {

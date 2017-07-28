@@ -1,5 +1,14 @@
 export const singer = state => state.singer
 
+/*
+ * 箭头函数
+ * singer = state => state.singer
+ * ===
+ * const singer = function（state）{
+ *   return state.singer
+ * }
+ * */
+
 export const playing = state => state.playing
 
 export const fullScreen = state => state.fullScreen

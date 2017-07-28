@@ -16,6 +16,12 @@ Vue.use(VueLazyload, {
 /* eslint-disable no-unused-vars */
 FastClick.attach(document.body)
 /* eslint-disable no-new */
+
+/* 初始化Vue
+*路由
+* vuex
+* */
+
 new Vue({
   el: '#app',
   router,
