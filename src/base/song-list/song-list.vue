@@ -28,7 +28,8 @@
     },
     methods: {
       selectItem(item, index) {
-        this.$emit('select', item, index)
+        console.log(item)
+        this.$emit('selectSong', item, index)
       },
       getDesc(song) {
         return `${song.singer}·${song.album}`

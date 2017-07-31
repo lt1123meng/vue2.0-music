@@ -11,6 +11,8 @@ export const singer = state => state.singer
 
 export const playing = state => state.playing
 
+// 是否全屏展示播放器
+
 export const fullScreen = state => state.fullScreen
 
 export const playlist = state => state.playlist

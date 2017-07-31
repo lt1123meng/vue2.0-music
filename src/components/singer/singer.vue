@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   import ListView from 'base/listview/listview'
   import {getSingerList} from 'api/singer'
   import {ERR_OK} from 'api/config'
@@ -89,7 +89,7 @@
       },
 //      在组件中映射mutation
       ...mapMutations({
-        setSinger: 'SET_SINGER'  //this.setSinger=this.$store.commit('SET_SINGER')
+        setSinger: 'SET_SINGER'
       })
     },
     components: {

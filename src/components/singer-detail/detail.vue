@@ -3,7 +3,7 @@
     <music-list :songs="songs" :title="title" :bgImage="bgImage"></music-list>
   </transition>
 </template>
-<script>
+<script type="text/ecmascript-6">
   import {mapGetters} from 'vuex'
   import {getSingerDetail} from 'api/singer'
   import {ERR_OK} from 'api/config'

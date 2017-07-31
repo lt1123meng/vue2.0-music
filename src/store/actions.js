@@ -3,6 +3,10 @@ import {playMode} from 'common/js/config'
 import {shuffle} from 'common/js/util'
 import {saveSearch, clearSearch, deleteSearch, savePlay, saveFavorite, deleteFavorite} from 'common/js/cache'
 
+/*
+* Action 提交的是 mutation，而不是直接变更状态
+* */
+
 function findIndex(list, song) {
   return list.findIndex((item) => {
     return item.id === song.id
